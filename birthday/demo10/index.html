@@ -1,0 +1,185 @@
+<!doctype html>
+<!--
+  Coded with love by Angela Li.
+  http://angela.li
+
+
+  P.S. Shirley is the cutest EVER ^__^
+-->
+<html>
+    <head>
+      <title>Happy Birthday, XXX!</title>
+      <link rel="stylesheet" type="text/css" href="lib/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="lib/jquery.js"></script>
+      <script type="text/javascript" src="lib/tweenmax.js"></script>
+      <script type="text/javascript" src="lib/superscrollorama.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+      <audio loop id="counting-stars">
+        <source src="audio/counting-stars.mp3" type="audio/mpeg">
+        <source src="audio/counting-stars.mp3" type="audio/ogg">
+        <embed height="0" width="0" src="audio/counting-stars.mp3">
+      </audio>
+      <div id="intro">
+        <h1 class="animated bounceInDown">Happy 21st Birthday, XXX!</h1>
+
+        <div id="intro-scroll" class="animated fadeIn">
+          <div id="intro-scroll-text">scroll down!</div>
+          <div id="intro-scroll-icon">
+            &#xf063;
+          </div>
+        </div>
+      </div>
+
+      <div class="intro2-line" id="intro2-line1"><h2>We talked to a few of your friends ...</h2></div>
+      <div class="intro2-line" id="intro2-line2"><h2>And asked them some questions ...</h2></div>
+      <div class="intro2-line" id="intro2-line3"><h2>Here's what they said :)</h2></div>
+
+      <div id="friend-quotes-headline">
+        <div class="headline-experience">
+          What's your favorite experience with Shirley?
+        </div>
+        <div class="headline-admire">
+          What are things you admire about Shirley?
+        </div>
+      </div>
+
+      <div id="friend-quotes">
+        <ul>
+          <li class="friend" id="friend1">
+            <div class="friend-experience">
+              My favorite experience was spending the hackathon sitting together, stressing out over the amount of work we had to do, but still managing to pull through and kick our project's asses.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/icon1.jpg" />
+              </div>
+              <div class="friend-name">
+                Alex
+              </div>
+            </div>
+            <div class="friend-admire">
+              The thing I admire most is how dedicated and hard working Shirley is. Everyone works hard at Harvard, but Shirley really takes that to a new level. And the best part is, she can still smile and be happy. While many of us use the amount of work we have as an excuse to be self centered, she never fails to be loving, caring, or thoughtful, and I admire that to no end.
+            </div>
+          </li>
+          <li class="friend" id="friend2">
+            <div class="friend-experience">
+              Shopping for perfume in the malls of Beijing two summer ago.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/icon3.jpg" />
+              </div>
+              <div class="friend-name">
+               XXX
+              </div>
+            </div>
+            <div class="friend-admire">
+              She's always so bubbly and gives great hugs.
+            </div>
+          </li>
+          <li class="friend" id="friend3">
+            <div class="friend-experience">
+              My favorite experience is from freshman year. It was my first time hanging out with Shirley and her friends in Thayer, and she was super welcoming. I loved pregaming with her and then traveling from party to party, always dancing and laughing :). She's the best!
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/icon1.jpg" />
+              </div>
+              <div class="friend-name">
+                XXX
+              </div>
+            </div>
+            <div class="friend-admire">
+              Shirley's dancing skills are hot!
+
+              <br/><br/>I admire how kind Shirley is; she always greets me with a huge smile on her face.
+
+              <br/><br/>Shirley is a boss at life. :)
+            </div>
+          </li>
+          <li class="friend" id="friend4">
+            <div class="friend-experience">
+              Watching her bring to life a beautiful creature of grace during her signature peacock dance at the annual Chinese New Year Festival celebration show at the Philip Arts Center in Gainesville, FL. (Yes---years ago). Best part of the show, every time.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/icon3.jpg" />
+              </div>
+              <div class="friend-name">
+               XXX
+              </div>
+            </div>
+            <div class="friend-admire">
+              What admiration deserving trait doesn't she have? She's smart, friendly, nice, genuine, down-to-earth, pretty, a great dancer :) Let's be real: Shirley is pretty much the best :)
+            </div>
+          </li>
+          <li class="friend" id="friend5">
+            <div class="friend-experience">
+              One of the first times I met Shirley, we were psetting late one night in Eliot dhall, and somehow there was a pencil stuck in the ceiling.  I was trying really hard to get the pencil out of the ceiling by throwing a frisbee at it.  Shirley thought this was funny, so I knew she was a cool person.
+            </div>
+            <div class="friend-id">
+              <div class="friend-photo">
+                <img src="img/icon1.jpg" />
+              </div>
+              <div class="friend-name">
+               XXX 
+              </div>
+            </div>
+            <div class="friend-admire">
+              Has real conversations instead of just making small talk.
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="intro2-line" id="intro2-line4"><h2>We also asked them, "If you could describe Shirley in one word ..."</h2></div>
+
+      <div class="intro2-line" id="intro2-line5"><h2>"What would it be?"</h2></div>
+
+      <div id="one-word">
+        <ul>
+          <li class="word" id="word1">
+            <span class="quote-mark">&ldquo;</span>uplifting<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word2">
+            <span class="quote-mark">&ldquo;</span>XD<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word3">
+            <span class="quote-mark">&ldquo;</span>sweetheart<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word4">
+            <span class="quote-mark">&ldquo;</span>wow<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word5">
+            <span class="quote-mark">&ldquo;</span>sincere!<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word6">
+            <span class="quote-mark">&ldquo;</span>cheerful :)<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word7">
+            <span class="quote-mark">&ldquo;</span>confident<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word8">
+            <span class="quote-mark">&ldquo;</span>mom<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word9">
+            <span class="quote-mark">&ldquo;</span>genuine<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word10">
+            <span class="quote-mark">&ldquo;</span>loving<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word11">
+            <span class="quote-mark">&ldquo;</span>sweetheart<span class="quote-mark">&rdquo;</span></li>
+          <li class="word" id="word12">
+            <span class="quote-mark">&ldquo;</span>twin<span class="quote-mark">&rdquo;</span></li>
+         
+      
+        </ul>
+      </div>
+
+      <div class="end-line" id="end-line1">
+        <h2>We love you, XX!</h2>
+        <p>Have an amazing 21st!</p>
+
+        <div class="signature">
+          <p><span class="heart">,</span><br/>your friends and family</p>
+        </div>
+      </div>
+    </body>
+</html>

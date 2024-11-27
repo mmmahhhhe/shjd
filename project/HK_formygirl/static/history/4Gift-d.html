@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>驚喜驚嚇盒子</title>
+    <link rel="stylesheet" href="../static/css/birthday-cake.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/bubbles.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/myself.css" media="screen" type="text/css"/>
+    <style>
+
+
+        .date-text {
+            font-size: 20px;
+            color: #2e2e2e;
+        }
+
+        .gift-icon {
+            width: 100px;
+            height: 100px;
+            background: url('../static/img/礼物盒子.png') no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        .container-gift-group {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* 添加其他样式，例如背景颜色、边框等 */
+            /*border: 1px solid #ccc; !* 添加边框，方便观察容器块的位置 *!*/
+        }
+
+        .content-block {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc; /* 添加边框，方便观察容器块的位置 */
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+<div class="container">
+    <div class="title-block">
+        <h1>驚喜驚嚇盒子</h1>
+        <div class="triangle"></div>
+    </div>
+
+
+    <!-- 创建总体容器块 -->
+    <div class="container-gift-group" style="height: 70%; width: 90%;"> <!-- 设置明确的高度和相对宽度 -->
+        <!--中间第1行-->
+        <div class="content-block" style="top: 10%; left: 45%"
+             onclick="showSpecialDay('2月14日')">
+            <div class="date-text" style="font-size: 40px;">2月14日</div>
+            <div class="gift-icon" style="width: 140px; height: 140px;"></div>
+        </div>
+        <!--中间第2行-->
+        <div class="content-block" style="top: 100%; left: 45%"
+             onclick="showSpecialDay('3月16日')">
+            <div class="date-text" style="font-size: 40px;">3月16日</div>
+            <div class="gift-icon" style="width: 140px; height: 140px;"></div>
+        </div>
+        <!--左侧第1行-->
+        <div class="content-block" style="top: 20%; left: 17%;"
+             onclick="showSpecialDay('2月15日')">
+            <div class="date-text">2月15日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 20%; left: 25%;"
+             onclick="showSpecialDay('2月16日')">
+            <div class="date-text">2月16日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 20%; left: 33%;"
+             onclick="showSpecialDay('2月17日')">
+            <div class="date-text">2月17日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--左侧第2行-->
+        <div class="content-block" style="top: 40%; left: 17%;"
+             onclick="showSpecialDay('2月18日')">
+            <div class="date-text">2月18日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 40%; left: 25%;"
+             onclick="showSpecialDay('2月19日')">
+            <div class="date-text">2月19日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 40%; left: 33%;"
+             onclick="showSpecialDay('2月20日')">
+            <div class="date-text">2月20日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--左侧第3行-->
+        <div class="content-block" style="top: 60%; left: 17%;"
+             onclick="showSpecialDay('2月21日')">
+            <div class="date-text">2月21日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 60%; left: 25%;"
+             onclick="showSpecialDay('2月22日')">
+            <div class="date-text">2月22日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 60%; left: 33%;"
+             onclick="showSpecialDay('2月23日')">
+            <div class="date-text">2月23日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--左侧第4行-->
+        <div class="content-block" style="top: 80%; left: 17%;"
+             onclick="showSpecialDay('2月24日')">
+            <div class="date-text">2月24日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 80%; left: 25%;"
+             onclick="showSpecialDay('2月25日')">
+            <div class="date-text">2月25日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 80%; left: 33%;"
+             onclick="showSpecialDay('2月26日')">
+            <div class="date-text">2月26日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--左侧第5行-->
+        <div class="content-block" style="top: 100%; left: 17%;"
+             onclick="showSpecialDay('2月27日')">
+            <div class="date-text">2月27日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 100%; left: 25%;"
+             onclick="showSpecialDay('2月28日')">
+            <div class="date-text">2月28日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 100%; left: 33%;"
+             onclick="showSpecialDay('2月29日')">
+            <div class="date-text">2月29日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--右侧第1行-->
+        <div class="content-block" style="top: 20%; left: 57%;"
+             onclick="showSpecialDay('2月15日')">
+            <div class="date-text">2月15日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 20%; left: 65%;"
+             onclick="showSpecialDay('2月16日')">
+            <div class="date-text">2月16日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 20%; left: 73%;"
+             onclick="showSpecialDay('2月17日')">
+            <div class="date-text">2月17日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--右侧第2行-->
+        <div class="content-block" style="top: 40%; left: 57%;"
+             onclick="showSpecialDay('2月18日')">
+            <div class="date-text">2月18日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 40%; left: 65%;"
+             onclick="showSpecialDay('2月19日')">
+            <div class="date-text">2月19日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 40%; left: 73%;"
+             onclick="showSpecialDay('2月20日')">
+            <div class="date-text">2月20日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--右侧第3行-->
+        <div class="content-block" style="top: 60%; left: 57%;"
+             onclick="showSpecialDay('2月21日')">
+            <div class="date-text">2月21日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 60%; left: 65%;"
+             onclick="showSpecialDay('2月22日')">
+            <div class="date-text">2月22日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 60%; left: 73%;"
+             onclick="showSpecialDay('2月23日')">
+            <div class="date-text">2月23日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--右侧第4行-->
+        <div class="content-block" style="top: 80%; left: 57%;"
+             onclick="showSpecialDay('2月24日')">
+            <div class="date-text">2月24日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 80%; left: 65%;"
+             onclick="showSpecialDay('2月25日')">
+            <div class="date-text">2月25日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 80%; left: 73%;"
+             onclick="showSpecialDay('2月26日')">
+            <div class="date-text">2月26日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <!--右侧第5行-->
+        <div class="content-block" style="top: 100%; left: 57%;"
+             onclick="showSpecialDay('2月27日')">
+            <div class="date-text">2月27日</div>
+            <div class="gift-icon"></div>
+        </div>
+        <div class="content-block" style="top: 100%; left: 65%;"
+             onclick="showSpecialDay('2月28日')">
+            <div class="date-text">2月28日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+        <div class="content-block" style="top: 100%; left: 73%;"
+             onclick="showSpecialDay('2月29日')">
+            <div class="date-text">2月29日</div>
+            <div class="gift-icon"></div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<script>
+    function showSpecialDay(dateText) {
+        // 这里可以跳转到下一个页面，并将 dateText 作为参数传递
+        console.log("Clicked on " + dateText);
+        // window.location.href = 'nextPage.html?date=' + dateText;
+        window.location.href = '5Media.html?date=' + dateText;
+    }
+</script>
+</body>
+</html>

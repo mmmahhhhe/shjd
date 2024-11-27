@@ -1,0 +1,26 @@
+.title-block {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: 0 auto; /* 实现居中 */
+    text-align: center; /* 使文本水平居中 */
+    font-size: 34px;
+    color: #000000;
+    z-index: 9999;
+
+}
+
+#text-daily {
+    font-size: 24px;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 5%;
+}
+
+
+.hide {
+    display: none;
+}
+

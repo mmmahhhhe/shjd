@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>驚喜驚嚇盒子</title>
+    <link rel="stylesheet" href="../static/css/birthday-cake.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/bubbles.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/myself.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/myself2.css" media="screen" type="text/css"/>
+    <style>
+
+        .gift-box {
+            width: 100px;
+            height: 100px;
+            background-image: url('../static/img/礼物打开.png');
+            background-size: cover;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .hide {
+            display: none;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+<div class="present" ontouchstart="ontouchstart">
+    <div class="santa">
+        <div class="santa__hat"></div>
+        <div class="santa__eyes"></div>
+        <div class="santa__beard">
+            <div class="santa__beard--cover"></div>
+        </div>
+        <div class="santa__smile"></div>
+    </div>
+    <div class="present__box">
+        <div class="present__ribbon--vertical"></div>
+        <div class="present__ribbon--horizontal"></div>
+    </div>
+    <div class="present__top">
+        <div class="present__ribbon--vertical"></div>
+        <div class="present__bow"></div>
+    </div>
+</div>
+
+</body>
+
+
+</html>

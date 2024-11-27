@@ -1,0 +1,37 @@
+
+.date-text {
+    font-size: 18px;
+    color: #2e2e2e;
+}
+
+.gift-icon {
+    width: 60px;
+    height: 60px;
+    background: url('../img/礼物盒子.png') no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.container-gift-group {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+}
+
+.content-block {
+    position: absolute;
+    /*border: 1px solid #ccc;*/
+    text-align: center;
+
+    /*transform: translate(-50%, -50%);*/
+    cursor: pointer;
+    transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+
+.content-block:hover {
+    background-color: #f0f0f0;
+    transform: translate(-50%, -50%) scale(1.1); /* 悬停时放大效果 */
+}
+

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>驚喜驚嚇盒子</title>
+    <!--    <link rel="stylesheet" href="../static/css/birthday-cake.css" media="screen" type="text/css"/>-->
+    <link rel="stylesheet" href="../static/css/bubbles.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/myself.css" media="screen" type="text/css"/>
+    <style>
+
+        #giftBox {
+            width: 500px;
+            height: 500px;
+            background-image: url('../static/img/礼物打开.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+
+        .hide {
+            display: none;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+<div id="content">
+    <button onclick="showGift()">点击送礼物</button>
+    <div id="giftBox" class="gift-box hide"></div>
+
+</div>
+</body>
+
+
+<script>
+    function showGift() {
+        var giftBox = document.getElementById('giftBox');
+        giftBox.classList.remove('hide');
+        setTimeout(function () {
+            giftBox.style.opacity = '1';
+            giftBox.style.transform = 'translate(-50%, -50%) scale(1.2)';
+        }, 100);
+        setTimeout(function () {
+            giftBox.style.opacity = '0';
+            giftBox.style.transform = 'translate(-50%, -50%) scale(0.8)';
+        }, 2000);
+        setTimeout(function () {
+            giftBox.classList.add('hide');
+            giftBox.style.opacity = '0';
+            giftBox.style.transform = 'translate(-50%, -50%) scale(1)';
+        }, 2500);
+    }
+
+</script>
+
+</html>

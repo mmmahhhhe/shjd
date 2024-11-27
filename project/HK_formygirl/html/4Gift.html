@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>小盒子</title>
+    <link rel="stylesheet" href="../static/css/birthday-cake.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/bubbles.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/4gift.css" media="screen" type="text/css"/>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="title-block">
+        <h1>小盒子</h1>
+        <div class="triangle"></div>
+    </div>
+
+    <!-- 创建总体容器块 -->
+    <div class="container-gift-group" style="height: 70%; width: 98%;">
+        <!-- 使用 JavaScript 动态生成内容 -->
+        <script>
+            const dates = [
+                '2月14日',
+                // '3月16日',
+                '2月15日', '2月16日', '2月17日',
+                '2月18日', '2月19日', '2月20日',
+                '2月21日', '2月22日', '2月23日',
+                '2月24日', '2月25日', '2月26日',
+                '2月27日', '2月28日', '2月29日',
+
+                // '3月1日', '3月2日', '3月3日',
+                // '3月4日', '3月5日', '3月6日',
+                // '3月7日', '3月8日', '3月9日',
+                // '3月10日', '3月11日', '3月12日',
+                // '3月13日', '3月14日', '3月15日',
+
+            ];
+            const topPercentages = [5,
+                // 112,
+                30, 30, 30,
+                50, 50, 50,
+                70, 70, 70,
+                90, 90, 90,
+                110, 110, 110,
+
+                // 20, 20, 20,
+                // 40, 40, 40,
+                // 60, 60, 60,
+                // 80, 80, 80,
+                // 100, 100, 100,
+
+            ];
+            const leftPercentages = [42,
+                // 42,
+                12, 42, 72,
+                12, 42, 72,
+                12, 42, 72,
+                12, 42, 72,
+                12, 42, 72,
+
+                // 54, 69, 84,
+                // 54, 69, 84,
+                // 54, 69, 84,
+                // 54, 69, 84,
+                // 54, 69, 84,
+
+            ];
+
+            for (let i = 0; i < dates.length; i++) {
+                let imagePath = '../static/img/礼物盒子/图片' + (i + 1) + '.png';
+                document.write(
+                    '<div class="content-block" style="top: ' +
+                    topPercentages[i] + '%; left: ' + leftPercentages[i] +
+                    '%" onclick="showSpecialDay(\'' + dates[i] + '\')">' +
+                    '<div class="date-text" >' + dates[i] + '</div>' +
+                    '<div class="gift-icon" style="background-image: url(' + imagePath + ');"></div>' + '</div>'
+                );
+
+            }
+
+
+        </script>
+    </div>
+</div>
+<audio src="../static/music/4gift.mp3" autoplay="autoplay" loop="loop"></audio>
+
+<!--<ul class="bg-bubbles">-->
+<!--    <li></li>-->
+<!--    <li></li>-->
+<!--    <li></li>-->
+<!--    <li></li>-->
+<!--    <li></li>-->
+<!--    <li></li>-->
+<!--    <li></li>-->
+<!--    <li></li>-->
+<!--    <li></li>-->
+<!--</ul>-->
+<script>
+    function showSpecialDay(dateText) {
+        // console.log("Clicked on " + dateText);
+        // window.location.href = 'nextPage.html?date=' + dateText;
+        window.location.href = '5Media.html?date=' + dateText;
+    }
+</script>
+</body>
+</html>
